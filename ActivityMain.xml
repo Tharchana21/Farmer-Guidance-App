@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Soil Moisture Input Field -->
+    <EditText
+        android:id="@+id/input_soil_moisture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Soil Moisture Value"
+        android:inputType="numberDecimal"/>
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Crops"
+        android:layout_below="@id/input_soil_moisture"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Recommended Crops Section -->
+    <TextView
+        android:id="@+id/text_crops_recommendation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_search"
+        android:layout_marginTop="16dp"
+        android:text="Recommended Crops:"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+    <!-- Detailed Section -->
+    <TextView
+        android:id="@+id/text_crop_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_crops_recommendation"
+        android:layout_marginTop="16dp"
+        android:text="Crop & Soil Details:"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+</RelativeLayout>

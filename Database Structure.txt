@@ -1,0 +1,9 @@
+CREATE TABLE Crops (
+    Name TEXT,
+    SoilType TEXT,
+    Climate TEXT
+);
+
+INSERT INTO Crops (Name, SoilType, Climate) VALUES ('Wheat', 'Loamy', 'Temperate');
+INSERT INTO Crops (Name, SoilType, Climate) VALUES ('Rice', 'Clay', 'Tropical');
+INSERT INTO Crops (Name, SoilType, Climate) VALUES ('Sugarcane', 'Alluvial', 'Tropical');
